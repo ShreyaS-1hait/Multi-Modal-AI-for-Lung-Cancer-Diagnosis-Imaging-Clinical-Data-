@@ -29,14 +29,16 @@ A multi-modal AI system that diagnoses lung cancer by combining:
 ## How to Run
 1. Open the notebook in Google Colab (badge above)
 2. Mount your Google Drive
-3. Place your dataset at: `MyDrive/lung-cancer-dataset/`
+3 Dataset:
+The dataset used is the **IQ-OTH/NCCD Lung Cancer Dataset** from Kaggle.
+- The folder should contain:
+  - `Malignant cases/`
+  - `Benign cases/`
+  - `Normal cases/`
+  - `lungcancerdataset.csv`
+- Download from: [Kaggle Dataset Link](https://www.kaggle.com/)
+- After downloading, upload to your Google Drive at: https://drive.google.com/drive/folders/1GJN0Q6Qh42DRLo78TAHo2jDuinyGeBAv?usp=drive_link
 4. Run all cells in order
-
-## Dataset Structure
-lung-cancer-dataset/
-├── Malignant cases/
-├── Benign cases/
-├── Normal cases/
 
 ## Author
 Shreya R — GITAM University
