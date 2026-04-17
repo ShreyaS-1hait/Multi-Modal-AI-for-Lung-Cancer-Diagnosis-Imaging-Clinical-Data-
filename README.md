@@ -1,44 +1,46 @@
 # Multi-Modal AI for Lung Cancer Diagnosis
-> Combining CT Scan Imaging + Clinical Data using Deep Learning
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ShreyaS-1hait/Multi-Modal-AI-for-Lung-Cancer-Diagnosis-Imaging-Clinical-Data-/blob/main/AI_Multimodel_Lung_Cancer_Diagonsis.ipynb)
+## 🚀 Overview
+This project implements a multi-modal machine learning system that integrates medical imaging data and clinical patient information to improve lung cancer detection.
 
----
+## 📌 Problem Statement
+Traditional diagnosis methods rely on either imaging or clinical data alone. This project combines both to enhance predictive performance.
 
-## Overview
-A multi-modal AI system that diagnoses lung cancer by combining:
-- **CT Scan Image Analysis** — ResNet50 deep learning model
-- **Clinical Data Analysis** — Gradient Boosting Classifier
-- **Fusion** — Equal weighted (50/50) combination of both models
+## 🧠 Methodology
 
-## Results
-| Model | Accuracy |
-|-------|----------|
-| Image Model (ResNet50) | 92.23% |
-| Clinical Model (Gradient Boosting) | 84.96% |
-| Dataset Size | 3,609 CT Scan Images |
-| Classes | Malignant, Benign, Normal |
+### Data Processing
+- Image Data: Processed using CNN for feature extraction
+- Clinical Data: Structured patient data processed using ML models
 
-## Tech Stack
-- Python, TensorFlow, Keras
-- ResNet50 (Transfer Learning)
-- Scikit-learn (Gradient Boosting)
-- Streamlit (Web App)
-- Google Colab + Google Drive
+### Model Architecture
+Image Data → CNN → Feature Extraction  
+Clinical Data → MLP → Feature Extraction  
+→ Fusion Layer → Final Prediction  
 
-## How to Run
-1. Open the notebook in Google Colab (badge above)
-2. Mount your Google Drive
-3 Dataset:
-The dataset used is the **IQ-OTH/NCCD Lung Cancer Dataset** from Kaggle.
-- The folder should contain:
-  - `Malignant cases/`
-  - `Benign cases/`
-  - `Normal cases/`
-  - `lungcancerdataset.csv`
-- Download from: [Kaggle Dataset Link](https://www.kaggle.com/)
-- After downloading, upload to your Google Drive at: https://drive.google.com/drive/folders/1GJN0Q6Qh42DRLo78TAHo2jDuinyGeBAv?usp=drive_link
-4. Run all cells in order
+### Techniques Used
+- Convolutional Neural Networks (CNN)
+- Data Fusion (Multi-modal learning)
+- Feature Engineering
 
-## Author
-Shreya R — GITAM University
+## 📊 Results
+- Model Accuracy: XX%  
+- Precision: XX%  
+- Recall: XX%  
+
+*(Update with actual values)*
+
+## 🛠 Tech Stack
+- Python  
+- TensorFlow / PyTorch  
+- NumPy, Pandas  
+
+## 📷 Visualizations
+(Add confusion matrix / graphs here)
+
+## 🔗 Repository Link
+[GitHub](your_link_here)
+
+## 🔮 Future Improvements
+- Improve dataset size  
+- Optimize model accuracy  
+- Deploy as web application  
